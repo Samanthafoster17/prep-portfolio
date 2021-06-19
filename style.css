@@ -1,0 +1,107 @@
+/* body */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: #CAE9FF;
+}
+
+/* headings */
+h1{
+    float: left;
+    font-size: 45px;
+    color: #CAE9FF;
+    padding: 10px;
+}
+
+h3{
+    font-size: 35px;
+}
+
+
+/* paragraphs */
+p{
+    font-size: 16px;
+}
+
+/* nav / nav links */
+nav, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1B4965;
+}
+
+li {
+    float: right;
+    font-size: 18px;
+}
+
+li a {
+    display: block;
+    color: #BEE9E8;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: #BEE9E8;
+    color: #1B4965;
+}
+
+/* sections */
+#intro, #about, #contact{
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+/* horizontal rule */
+hr{
+    border: 10px solid #5FA8D3;
+    border-radius: 5px;
+}
+
+/* images */
+img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+}
+
+/* contact links */
+#contact a{
+    color: #1B4965;
+}
+
+#contact a:hover{
+color:#5FA8D3;
+}
+
+/* socail links/ email */
+.connect{
+    display: inline-flex;
+}
+
+.connect img{
+    width: 65px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+} 
+
+/* footer */
+footer li {
+float: none;
+}
+
+/* media responsiveness */
+@media screen and (max-width: 500px) {
+    .connect {
+        display: inline-block;
+    }
+}

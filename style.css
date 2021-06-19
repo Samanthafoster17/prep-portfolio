@@ -5,7 +5,7 @@
 
 body{
     text-align: center;
-    background-color: #CAE9FF;
+    background: #CAE9FF;
 }
 
 /* headings */
@@ -14,16 +14,27 @@ h1{
     font-size: 45px;
     color: #fff;
     padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    float: left;
+    padding-top: 35px;
+    padding-left: 10px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h3{
     font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
 /* paragraphs */
 p{
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* nav / nav links */
@@ -40,16 +51,24 @@ li {
     font-size: 18px;
 }
 
-li a {
+a:link {
     display: block;
     color: #BEE9E8;
     text-align: center;
     padding: 14px 16px;
 }
 
+li a:visited{
+    color: #5FA8D3;
+}
+
 li a:hover {
     background-color: #BEE9E8;
     color: #1B4965;
+}
+
+li a:active{
+    color: #CAE9FF;
 }
 
 /* sections */
@@ -69,18 +88,28 @@ hr{
 img{
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 400px;
+    height: 300px;
     display: block;
 }
 
 /* contact links */
-#contact a{
+#contact li a:link{
     color: #1B4965;
 }
 
-#contact a:hover{
+#contact li a:visited{
+    color: #1B4965;
+    }
+
+#contact li a:hover{
 color:#5FA8D3;
 }
+
+#contact li a:active{
+    color: #1B4965;
+}
+
 
 /* socail links/ email */
 .connect{
@@ -89,10 +118,15 @@ color:#5FA8D3;
 
 .connect img{
     width: 65px;
+    height: 65px;
     display: inline-block;
     vertical-align: top;
     padding: 10px;
 } 
+
+.connect li{
+    float: left;
+}
 
 /* footer */
 footer li {
@@ -100,8 +134,24 @@ float: none;
 }
 
 /* media responsiveness */
-@media screen and (max-width: 500px) {
-    .connect {
+
+@media screen and (max-width:800px) {
+    nav ul{
         display: inline-block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .connect{
+        display: inline-block;
+    }
+
+    .connect li{
+     float: none;
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
     }
 }
